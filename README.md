@@ -38,10 +38,11 @@ Route: /products?page=1
 Route: /products/:categoryName?page=1
 
 4. PUT: Update List of Products
-Route: /
+Route: /products/:productId
 
 5. DELETE: Delete Category and associated Product Items
-Route: /category
+Route: /products/:Identifier 
+Identifier can be Product_Name or Product_ID
 
 
 ### Usage
