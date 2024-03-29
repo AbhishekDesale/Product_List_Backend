@@ -21,7 +21,7 @@ Route: /category
 Route: /categorys
 
 ### product.js
-Endpoints:
+- Endpoints:
 1.POST: Add a new product with category ID
 Route: /products
 
