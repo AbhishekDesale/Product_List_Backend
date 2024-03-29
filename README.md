@@ -30,20 +30,17 @@ identifier can be Category_Name or Category_ID
 
 ### product.js
 - Endpoints:
+
 1.POST: Add a new product with category ID
 Route: /products
 
-2.GET: Get list of all products with pagination
-Route: /products?page=1
+2.GET: Get list of all products with pagination Route: /products?page=1
 
-3.GET: Get list of products for a specific category with pagination
-Route: /products/:categoryName?page=1
+3.GET: Get list of products for a specific category with pagination Route: /products/:categoryName?page=1
 
-4. PUT: Update List of Products
-Route: /products/:productId
+4. PUT: Update List of Products Route: /products/:productId
 
-5. DELETE: Delete Category and associated Product Items
-Route: /products/:Identifier 
+5. DELETE: Delete Category and associated Product Items Route: /products/:Identifier 
 Identifier can be Product_Name or Product_ID
 
 
@@ -59,6 +56,10 @@ Identifier can be Product_Name or Product_ID
 - To add a new product, send a POST request to /products with the product name and category ID in the request body.
 - To get a list of all products with pagination, send a GET request to /products?page=1.
 - To get a list of products for a specific category with pagination, send a GET request to /products/:categoryName?page=1.
+- To Delete a list of Products from any Category using Product_name or Product_id, SEND Delete Request to Route: /products/:productId
+- To Delete a list of Category and all associated products,SEND Delete Route: /category/:identifier
+- To Update Category_name , Send Put Route: /category/:identifier , identifier can be Category_Name or Category_ID
+- To Update Product_name, Productid,Category_id , Send PUT Route: /category/:identifier identifier can be Category_Name or Category_ID
 
 ## Note
 - Ensure that the database connection is correctly configured in the application.
