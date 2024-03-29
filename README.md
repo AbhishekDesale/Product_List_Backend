@@ -15,7 +15,7 @@ Columns: Product_id, Product_name, Category_id (references Category.Category_id)
 
 - Endpoints:
 1. POST: Add a new category
-Route: /category
+Route: /categorys
 
 2. GET: Get list of category IDs
 Route: /categorys
@@ -38,7 +38,7 @@ Route: /products/:categoryName?page=1
 - Set up PostgreSQL database with the required tables and initial data.
 - Start the server: npm start.
 ### API Endpoints
-- To add a new category, send a POST request to /category with the category name in the request body.
+- To add a new category, send a POST request to /categorys with the category name in the request body.
 - To get a list of category IDs, send a GET request to /categorys.
 - To add a new product, send a POST request to /products with the product name and category ID in the request body.
 - To get a list of all products with pagination, send a GET request to /products?page=1.
