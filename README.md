@@ -21,7 +21,8 @@ Route: /categorys
 Route: /categorys
 
 3. PUT: Update List of Category
-Route: /category/
+   Route: /category/:identifier
+identifier can be Category_Name or Category_ID
 
 4. DELETE: Delete Category and associated Product Items
 Route: /category/:identifier
