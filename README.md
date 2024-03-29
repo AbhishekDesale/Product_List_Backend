@@ -20,6 +20,12 @@ Route: /categorys
 2. GET: Get list of category IDs
 Route: /categorys
 
+3. PUT: Update List of Category
+Route: /category
+
+4. DELETE: Delete Category and associated Product Items
+Route: /category
+
 ### product.js
 - Endpoints:
 1.POST: Add a new product with category ID
@@ -30,6 +36,13 @@ Route: /products?page=1
 
 3.GET: Get list of products for a specific category with pagination
 Route: /products/:categoryName?page=1
+
+4. PUT: Update List of Products
+Route: /
+
+5. DELETE: Delete Category and associated Product Items
+Route: /category
+
 
 ### Usage
 - Running the Application
